@@ -3,256 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tai Xvideo</title>
-    <link rel="icon" type="icon" href="1200px-Red_x.svg.png">
+    <title>Tai-Xvdieo</title>
+
     <style>
-        body{
-            background-color: rgb(0, 64, 201);
-            margin: 0%;
-            padding: 0%;
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            position: relative;
         }
-
-        /* start-hearder */
         header{
-            background-color: rgb(0, 0, 0);
+            border: 1px solid red;
             display: flex;
-            
-            /* border: 1px solid red; */
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 140px;
             justify-content: space-between;
-            border-radius: 10px;
-           
-           
+            position: sticky;
+            top: 0;
+            position: fixed;
+            z-index: 2;
+            top: 0;
+        }
+
+        .logo h1{
+            border: 1px solid red;
+            display: flex;
+            padding: 2rem;
+            justify-content: center;
+            align-items: center;
+            margin-top: 8px;
+            margin-left: 15px;
+            font-size: 50px;
 
         }
 
-        .h-one{
-            /* border: 1px solid rgb(60, 255, 0); */
-            margin-left: 25px;
+        header ul{
+            border: 2px solid greenyellow;
+            list-style: none;
+            display: flex;
+            font-size: 25px;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            
+           
+        }
+
+        ul li a{
+            display: flex;
+            margin: 1.5rem;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav{
+            border:  2px solid blue;
+            display: flex;
             text-align: center;
             justify-content: center;
             align-items: center;
-            font-size: 15px;
-            color: rgb(255, 0, 0);
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            width: 100%;
+            height: 140px;
+            background-color: blue;
+            border-radius: 20px;
+            margin-top: 140px;
+            }
+
+        .nav1 a{
             
-        }
-
-        .h-one h2:active{
-            color: antiquewhite;
-            background-color: transparent;
-        }
-
-       ul{
-        display: flex;
-        /* border: 1px solid red; */
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        list-style: none;
-
-       }
-
-       li a{
-        text-decoration: none;
-        margin: 0.7rem;
-        color: antiquewhite;
-       }
-
-       li a:hover{
-        color: red;
-        background-color: transparent;
-       }
-
-       li a:active{
-        color: greenyellow;
-        background-color: transparent;
-       }
-        /* End hearder */
-        /* st nav */
-        nav{
-            border: 1px solid green;
-            height: 90px;
-            display: flex;
-            background-color: black;
-           
-            
-        }
-
-        nav{
-            margin-left: 10px;
-            margin-right: 10px;
             justify-content: center;
             align-items: center;
+            
+            
+        }
+
+        section{
+            border: 2px solid red;
+            width: 100%;
+            height: 100%;
+            margin-right: 10px;
             border-radius: 15px;
-            margin-top: 5px;
+            margin-top: 10px;
+            background-color: blue;
+        }
+        
+        .section1{
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 20px;
+            color: white;
+
+        }
+
+        footer{
+            font-size: 25px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        
+        #btt{
+            padding: 1.5rem;
+            border: none;
+            background-color: black;
+            color: white;
+            font-size: 30px;
+            border-radius: 20px;
+            position: fixed;
+            z-index: 1;
+            right: 1rem;
+            bottom: 3rem;
+            right: 2rem;
+
         }
        
-        /* end nav */
-
-        /* sta sec */
-        section{
-            /* border: 1px solid#ff0000; */
-            height: 2800px;
-            margin-left: 10px;
-            margin-right: 10px;
-            border-radius: 15px;
-            margin-top: 15px;
-            color: #fff ;
-            
-           
-        }
-
-        
-
-        .sec p{
-            margin-left: 15px;
-        }
-
-        .foot p{
-            margin: 15px;
-            text-align: right;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-            color: #ff0000;
-            
-            
-        }
-
-
-        /* end sec */
     </style>
+
+<script>
+    let mybtt = document.getElementById("btt");
+
+    
+    function scrollFuntion() {
+        if (document.body.scrollTopn > 5 || document.documentElement.scrollTop > 5) {
+            mybtt.style.display = "block";
+        } else
+            mybtt.style.display = "none";
+    }
+
+    window.onscroll = function() {
+        scrollFuntion();
+    }
+
+    function back() {
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+    }
+</script>
 
 </head>
 <body>
-    <!-- start hearder -->
+
+
+    
+
+
+   <div class="div-b">
+    <button onclick="back();" id="btt" title="ပွၵ်ႈၶိုၼ်းတင်းၼိူဝ်">🔼</button>
+   </div>
+    <!-- s header -->
     <header>
-        <div class="h-one">
-            <H2>Tai X</H2>
+
+        <div class="logo">
+            <h1>Tai X</h1>
         </div>
 
         <ul>
-            <li><a href="https://www.xnxx.com/">Video</a></li>
-            <li><a href="https://multi.xnxx.com/">Photo</a></li>
-            <li><a href="https://www.sex.com/">TikTok</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Photo</a></li>
+            <li><a href="#">TikTok</a></li>
         </ul>
-    </header>
-    <!-- End hearder -->
-    <!-- st nav -->
-    <nav>
-        <div class="nav1">
-            <a href="https://www.xnxx.com/search/chinese"><button style="border-radius: 6px; background-color: rgb(255, 0, 0); color: rgb(0, 0, 0);">ၶေႇ</button></a>
-            <a href="https://www.xnxx.com/search/japanese"><button style="border-radius: 6px; background-color: rgb(255, 0, 0); color: rgb(0, 0, 0);">ၵျပၢၼ်ႇ</button></a>
-            <a href="https://www.xnxx.com/search/stepmom?top"><button style="border-radius: 6px; background-color: rgb(255, 0, 0); color: rgb(0, 0, 0);">မႄႈသိုပ်ႇ</button></a>
-            <a href="https://www.xnxx.com/search/hospital?top"><button style="border-radius: 6px; background-color: rgb(255, 0, 0); color: rgb(0, 0, 0);">မေႃယႃ</button></a>
-            <a href="https://www.xnxx.com/search/girlfriend?top"><button style="border-radius: 6px; background-color: rgb(255, 0, 0); color: rgb(0, 0, 0);">ၸူႉႁၵ်ႉ</button></a>
-            <a href="https://www.xnxx.com/search/sister"><button style="border-radius: 6px; background-color: rgb(255, 0, 0); color: rgb(0, 0, 0);">ပီႈၼၢင်း</button></a>
-            <hr>
-            <a href="https://www.xnxx.com/search/cum+in"><button style="border-radius: 6px; background-color: rgb(255, 0, 0); color: rgb(0, 0, 0);">တႅၵ်ႇၼႂ်း</button></a>
-            <a href="https://www.xnxx.com/search/cum+out"><button style="border-radius: 6px; background-color: rgb(255, 0, 0); color: rgb(0, 0, 0);">တႅၵ်ႇၼွၵ်ႈ</button></a>
-            <a href="https://www.xnxx.com/search/myanmar"><button style="border-radius: 6px; background-color: rgb(255, 0, 0); color: rgb(0, 0, 0);">မၢၼ်ႈ</button></a>
-            <a href="https://www.xnxx.com/search/korean?top"><button style="border-radius: 6px; background-color: rgb(255, 0, 0); color: rgb(0, 0, 0);">ၵဝ်းရီ</button></a>
-            <a href="https://www.xnxx.com/search/pussy"><button style="border-radius: 6px; background-color: rgb(255, 0, 0); color: rgb(0, 0, 0);">ႁီ</button></a>
-            <a href="https://www.xnxx.com/search/girl+to"><button style="border-radius: 6px; background-color: rgb(255, 0, 0); color: rgb(0, 0, 0);">ယိင်း+ယိင်း</button></a>
-            
 
+    </header>
+    <!-- e header -->
+
+    <!-- s nav -->
+    <nav>
+
+        <div class="nav1">
+            <a href="#"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: red; color: rgb(0, 0, 0);">[မႄႈသိုပ်ႇ]</button></a>
+            <a href="#"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: red; color: rgb(0, 0, 0);">[ပီႈသိုပ်ႇ]</button></a>
+            <a href="#"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: rgb(248, 248, 248); color: rgb(0, 0, 0);">[ၸူႉႁၵ်ႉ]</button></a>
+            <a href="#"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">[သၢဝ်ၶေႇ]</button></a>
+            <a href="#"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">[သၢဝ်မၢၼ်ႈ]</button></a>
+            <a href="#"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: rgb(255, 0, 0); color: rgb(0, 0, 0);">[သၢဝ်ထႆး]</button></a>
+            <a href="#"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: red; color: rgb(0, 0, 0);">[တႅၵ်ႇၼွၵ်ႈ]</button></a>
+            <a href="#"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: red; color: rgb(0, 0, 0);">[တႅၵ်ႇၼႂ်း]</button></a>
+            <a href="#"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: red; color: rgb(0, 0, 0);">[ယိင်း+ယိင်း]</button></a>
+            <a href="#"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">[ ႁီ ]</button></a>
+            <a href="#"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">[သၢဝ်18+]</button></a>
+            <a href="#"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">[ပေႃႈသိုပ်ႇ]</button></a>
+            <a href="#"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: red; color: rgb(0, 0, 0);">[မိုဝ်း]</button></a>
+            
         </div>
     </nav>
-    <!-- end nav -->
+    <!-- e nav -->
 
-    <!-- sta sec -->
+    <!-- s section -->
     <section>
-        <div class="sec">
-            <div class="secc">
-                <video style="border-radius: 15px;"  width="390" height="200" controls>
-                    <source src="xvideo (1).mp4" type="video">
-                </video>
-            </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, repellat.</p>
-            <hr>
+        <div class="section1">
+            <video width="800px" height="100%" controls>
+                <source src="xvideo (5).mp4" >
+            </video>
+            <p style="font-size: 35px;">Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. Minima illo 
+                consequatur dolorum maiores dolore atque.</p>
+            <hr style="margin-top: 10px;">
 
-            <div class="secc">
-                <video style="border-radius: 15px;"  width="390" height="200" controls>
-                    <source src="xvideo (2).mp4" type="video">
-                </video>
-            </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, repellat.</p>
-            <hr>
+        </div>
 
-            <div class="secc">
-                <video style="border-radius: 15px;"  width="390" height="200" controls>
-                    <source src="xvideo (3).mp4" type="video">
-                </video>
-            </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, repellat.</p>
-            <hr>
+        <div class="section1">
+            <video width="800px" height="100%" controls>
+                <source src="xvideo (5).mp4" >
+            </video>
+            <p style="font-size: 35px;">Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. Minima illo 
+                consequatur dolorum maiores dolore atque.</p>
+            <hr style="margin-top: 10px;">
 
-            <div class="secc">
-                <video style="border-radius: 15px;"  width="390" height="200" controls>
-                    <source src="xvideo (4).mp4" type="video">
-                </video>
-            </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, repellat.</p>
-            <hr>
+        </div>
 
-            <div class="secc">
-                <video style="border-radius: 15px;"  width="390" height="200" controls>
-                    <source src="xvideo (5).mp4" type="video">
-                </video>
-            </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, repellat.</p>
-            <hr>
+        <div class="section1">
+            <video width="800px" height="100%" controls>
+                <source src="xvideo (5).mp4" >
+            </video>
+            <p style="font-size: 35px;">Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. Minima illo 
+                consequatur dolorum maiores dolore atque.</p>
+            <hr style="margin-top: 10px;">
 
-            <div class="secc">
-                <video style="border-radius: 15px;"  width="390" height="200" controls>
-                    <source src="xvideo (6).mp4" type="video">
-                </video>
-            </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, repellat.</p>
-            <hr>
+        </div>
 
-            <div class="secc">
-                <video style="border-radius: 15px;"  width="390" height="200" controls>
-                    <source src="xvideo (7).mp4" type="video">
-                </video>
-            </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, repellat.</p>
-            <hr>
+        <div class="section1">
+            <video width="800px" height="100%" controls>
+                <source src="xvideo (5).mp4" >
+            </video>
+            <p style="font-size: 35px;">Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. Minima illo 
+                consequatur dolorum maiores dolore atque.</p>
+            <hr style="margin-top: 10px;">
 
-            <div class="secc">
-                <video style="border-radius: 15px;"  width="390" height="200" controls>
-                    <source src="xvideo (8).mp4" type="video">
-                </video>
-            </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, repellat.</p>
-            <hr>
+        </div>
 
-            <div class="secc">
-                <video style="border-radius: 15px;"  width="390" height="200" controls>
-                    <source src="xvideo (9).mp4" type="video">
-                </video>
-            </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, repellat.</p>
-            <hr>
+        <div class="section1">
+            <video width="800px" height="100%" controls>
+                <source src="xvideo (5).mp4" >
+            </video>
+            <p style="font-size: 35px;">Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. Minima illo 
+                consequatur dolorum maiores dolore atque.</p>
+            <hr style="margin-top: 10px;">
 
-            <div class="secc">
-                <video style="border-radius: 15px;"  width="390" height="200" controls>
-                    <source src="xvideo (10).mp4" type="video">
-                </video>
-            </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, repellat.</p>
-            <hr>
+        </div>
+
+        <div class="section1">
+            <video width="800px" height="100%" controls>
+                <source src="xvideo (5).mp4" >
+            </video>
+            <p style="font-size: 35px;">Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. Minima illo 
+                consequatur dolorum maiores dolore atque.</p>
+            <hr style="margin-top: 10px;">
+
+        </div>
+
+        <div class="section1">
+            <video width="800px" height="100%" controls>
+                <source src="xvideo (5).mp4" >
+            </video>
+            <p style="font-size: 35px;">Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. Minima illo 
+                consequatur dolorum maiores dolore atque.</p>
+            <hr style="margin-top: 10px;">
+
+        </div>
+
+        <div class="section1">
+            <video width="800px" height="100%" controls>
+                <source src="xvideo (5).mp4" >
+            </video>
+            <p style="font-size: 35px;">Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. Minima illo 
+                consequatur dolorum maiores dolore atque.</p>
+            <hr style="margin-top: 10px;">
 
         </div>
     </section>
-    <!-- end sec -->
+    <!-- e section -->
 
-    <!-- footer sta -->
+    <!-- s footer -->
     <footer>
-        <div class="foot">
-            <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">&copy;2023 deverlop by PM</p>
-        </div>
+        <H3>Copyright:2023</H3>
     </footer>
-    <!-- footer end -->
+    <!-- e footer -->
 </body>
 </html>
