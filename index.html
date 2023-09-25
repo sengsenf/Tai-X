@@ -1,150 +1,348 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tai-Xvdieo</title>
-
+    <title>Tai X</title>
+    <!-- start style -->
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            position: relative;
-        }
-        header{
-            /* border: 1px solid red; */
-            display: flex;
+
+        /* start body */
+        body{
             background-color: black;
-            color: white;
-            width: 100%;
-            height: 140px;
-            justify-content: space-between;
-            position: sticky;
-            top: 0;
-            position: fixed;
-            z-index: 2;
-            top: 0;
         }
-
-        .logo h1{
-            /* border: 1px solid red; */
+        /* End Body */
+        /* start header */
+        header{
+            /* border: 2px solid red; */
             display: flex;
-            padding: 2rem;
-            justify-content: center;
-            align-items: center;
-            margin-top: 8px;
-            margin-left: 15px;
-            font-size: 50px;
-
+            justify-content: space-between;
+            background-color: rgb(255, 0, 43);
+            border-radius: 20px;
+            margin-bottom: 10px;
         }
 
-        header ul{
-            /* border: 2px solid greenyellow; */
+
+        header h2 {
+            /* border: 2px solid rgb(1, 2, 0); */
+            margin-left: 20px;
+            font-size: 35px;
+            padding: 10px; 
+        }
+
+        header ul  {
+            /* border: 2px solid black; */
             list-style: none;
             display: flex;
-            font-size: 25px;
             justify-content: center;
             align-items: center;
-            margin-right: 15px;
             
-           
         }
 
-        ul li a{
-            display: flex;
-            margin: 1.5rem;
+        header ul li a {
+            margin: 1rem;
             text-decoration: none;
-            color: white;
+            font-size: 25px;
+            color: rgb(0, 0, 0);
         }
+        /* end header */
 
-       
-
-        header ul li a:active{
-            color: greenyellow;
-            text-decoration: none;
-        }
-
-        nav{
-            /* border:  2px solid rgb(255, 0, 0); */
+        /* start nav */
+        nav {
+            /* border: 2px solid black; */
+            border-radius: 20px;
+            background-color: rgb(25, 0, 255);
+            width: 808px;
+            height: 220px;
             display: flex;
+            list-style: none;
             text-align: center;
             justify-content: center;
             align-items: center;
-            width: 828px;
-            height: 140px;
-            background-color: blue;
-            border-radius: 20px;
-            margin-top: 140px;
-
-            }
-
-        .nav1 a{
-            
-            justify-content: center;
-            align-items: center;
-            
-            
         }
 
-        section{
-            width: 100%;
-            height: 100%;
-            background-color: blue;
-            transition: background-color 0.3s ease;
-        }
-
-        section:active{
-            background-color: red;
-        }
-
-        section:hover{
-            background-color: red;
-        }
-    
-        section{
-            /* border: 2px solid red; */
-            width: 828px;
-            height: 100%;
-            margin-right: 10px;
-            border-radius: 15px;
-            margin-top: 10px;
-            background-color: blue;
-        }
-        
-        .section1{
+        .nav1 a {
+            /* border: 1px solid rgb(255, 255, 255); */
             margin-left: 10px;
             margin-right: 10px;
-            margin-top: 10px;
+            
+        }
+
+        /* end nav */
+
+        /* start main */
+        main {
+            /* border: 2px solid black; */
+            background-color: blue;
             color: white;
-
+            border-radius: 20px;
+            margin-top: 5px;
+            height: 100%;
+            width: 808px;
         }
 
-        .section1 video{
-            margin-top: 20px;
-        }
-
-        footer{
-            font-size: 25px;
+        .main1 {
+            margin-left: 30px;
             margin-top: 10px;
-            margin-bottom: 10px;
-            display: flex;
+            margin-right: 30px;
+
+        }
+
+        .main1 iframe {
             width: 100%;
-            height: 50px;
+            height: 400px;
+            margin-top: 20px;
+            
+        }
+
+        /* end main */
+        
+        /* start footer */
+        footer{
+            border: 2px solid red;
+            background-color: blue;
+            border-radius: 20px;
+            color: white;
+        }
+
+        footer h3{
+            margin-left: 20px;
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /* end footer */
+
+        @media (max-width:828px) {
+             /* start body */
+        body{
+            background-color: black;
+        }
+        /* End Body */
+        /* start header */
+        header{
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(255, 0, 43);
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+
+        header h2 {
+            /* border: 2px solid rgb(1, 2, 0); */
+            margin-left: 20px;
+            font-size: 35px;
+            padding: 10px; 
+        }
+
+        header ul  {
+            /* border: 2px solid black; */
+            list-style: none;
+            display: flex;
             justify-content: center;
             align-items: center;
+            
+        }
+
+        header ul li a {
+            margin: 1rem;
+            text-decoration: none;
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+        }
+        /* end header */
+
+        /* start nav */
+        nav {
+            /* border: 2px solid black; */
+            border-radius: 20px;
+            background-color: rgb(25, 0, 255);
+            width: 808px;
+            height: 220px;
+            display: flex;
+            list-style: none;
             text-align: center;
-            background-color: black;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav1 a {
+            /* border: 1px solid rgb(255, 255, 255); */
+            margin-left: 10px;
+            margin-right: 10px;
+            
+        }
+
+        /* end nav */
+
+        /* start main */
+        main {
+            /* border: 2px solid black; */
+            background-color: blue;
+            color: white;
+            border-radius: 20px;
+            margin-top: 5px;
+            height: 100%;
+            width: 810px;
+        }
+
+        main:hover {
+            background-color: red;
+        }
+
+        .main1 {
+            margin-left: 30px;
+            margin-top: 10px;
+            margin-right: 30px;
+
+        }
+
+        .main1 iframe {
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+            
+        }
+
+        /* end main */
+        
+        /* start footer */
+        footer{
+            border: 2px solid red;
+            background-color: blue;
+            border-radius: 20px;
             color: white;
         }
+
+        footer h3{
+            margin-left: 20px;
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /* end footer */
+        }
+
+        @media (min-width:829px) {
+             /* start body */
+        body{
+            background-color: black;
+        }
+        /* End Body */
+        /* start header */
+        header{
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(255, 0, 43);
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+
+        header h2 {
+            /* border: 2px solid rgb(1, 2, 0); */
+            margin-left: 20px;
+            font-size: 35px;
+            padding: 10px; 
+        }
+
+        header ul  {
+            /* border: 2px solid black; */
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        header ul li a {
+            margin: 1rem;
+            text-decoration: none;
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+        }
+        /* end header */
+
+        /* start nav */
+        nav {
+            /* border: 2px solid black; */
+            border-radius: 20px;
+            background-color: rgb(25, 0, 255);
+            width: 100%;
+            height: 220px;
+            display: flex;
+            list-style: none;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav1 a {
+            /* border: 1px solid rgb(255, 255, 255); */
+            margin-left: 10px;
+            margin-right: 10px;
+            
+        }
+
+        /* end nav */
+
+        /* start main */
+        main {
+            /* border: 2px solid black; */
+            background-color: blue;
+            color: white;
+            border-radius: 20px;
+            margin-top: 5px;
+            height: 100%;
+            width: 100%;
+            
+        }
+
+        .main1 {
+            margin-left: 30px;
+            margin-top: 10px;
+            margin-right: 30px;
+            
+        }
+
+        .main1 iframe {
+            
+            width: 1000px;
+            height: 500px;
+            margin-top: 20px;
+            
+        }
+
+        /* end main */
         
+        /* start footer */
+        footer{
+            /* border: 2px solid red; */
+            background-color: blue;
+            border-radius: 20px;
+            color: white;
+            width: 100%;
+        }
+
+        footer h3{
+            margin-left: 20px;
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /* end footer */
+        }
+
+        /* start btt */
         #btt{
             padding: 1.5rem;
             border: none;
-            background-color: black;
+            background-color: blue;
+            border: 2px solid black;
             color: white;
             font-size: 30px;
-            border-radius: 20px;
+            border-radius: 50px;
             position: fixed;
             z-index: 1;
             right: 1rem;
@@ -153,467 +351,168 @@
 
         }
 
-        @media (min-width: 829px) {
+        /* end btt */
 
-            header{
-            /* border: 1px solid red; */
-            display: flex;
-            background-color: black;
-            color: white;
-            width: 100%;
-            height: 120px;
-            justify-content: space-between;
-            position: sticky;
-            top: 0;
-            position: fixed;
-            z-index: 2;
-            top: 0;
-        }
-
-        .logo h3{
-            /* border: 1px solid red; */
-            display: flex;
-            padding: 2rem;
-            justify-content: center;
-            align-items: center;
-            margin-top: 8px;
-            margin-left: 15px;
-            font-size: 50px;
-
-        }
-         
-
-        nav{
-            /* border:  2px solid rgb(255, 0, 0); */
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 140px;
-            background-color: blue;
-            border-radius: 20px;
-            margin-top: 120px;
-            }
-
-        .nav1 a{
-            
-            justify-content: center;
-            align-items: center;
-            
-            
-        }
-
-        section{
-            /* border: 2px solid red; */
-          
-            width: 100%;
-            height: 100%;
-            margin-left: 10px;
-            margin-right: 10px;
-            border-radius: 15px;
-            margin-top: 10px;
-            background-color: blue;
-        }
-        
-        .section1{
-            display: flex;
-            margin-left: 5px;
-            margin-right: 5px;
-            
-            margin-top: 10px;
-            color: white;
-
-        }
-
-        .section2{
-            display: flex;
-            margin-left: 5px;
-            margin-right: 5px;
-            
-            margin-top: 10px;
-            color: white;
-
-        }
-
-        .section3{
-            display: flex;
-            margin-left: 5px;
-            margin-right: 5px;
-            
-            margin-top: 10px;
-            color: white;
-
-        }
-
-        .section4{
-            display: flex;
-            margin-left: 5px;
-            margin-right: 5px;
-            
-            margin-top: 10px;
-            color: white;
-
-        }
-
-        .section5{
-            display: flex;
-            margin-left: 5px;
-            margin-right: 5px;
-            
-            margin-top: 10px;
-            color: white;
-
-        }
-
-        .section6{
-            display: flex;
-            margin-left: 5px;
-            margin-right: 5px;
-            
-            margin-top: 10px;
-            color: white;
-
-        }
-
-        .section1 p{
-            display: none;
-        }
-
-        .section2 p{
-            display: none;
-        }
-
-        .section3 p{
-            display: none;
-        }
-
-        .section4 p{
-            display: none;
-        }
-
-        .section5 p{
-            display: none;
-        }
-
-        .section6 p{
-            display: none;
-        }
-        
-
-        .section1 video{
-            margin-top: 20px;
-        }
-
-        footer{
-            font-size: 25px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            display: flex;
-            width: 100%;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background-color: black;
-            color: white;
-        }
-        
-       
-        }
-
-       @media (max-width: 828px) {
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            position: relative;
-        }
-        header{
-            /* border: 1px solid red; */
-            display: flex;
-            background-color: black;
-            color: white;
-            width: 100%;
-            height: 140px;
-            justify-content: space-between;
-            position: sticky;
-            top: 0;
-            position: fixed;
-            z-index: 2;
-            top: 0;
-        }
-
-        .logo h1{
-            /* border: 1px solid red; */
-            display: flex;
-            padding: 2rem;
-            justify-content: center;
-            align-items: center;
-            margin-top: 8px;
-            margin-left: 15px;
-            font-size: 50px;
-
-        }
-
-        header ul{
-            /* border: 2px solid greenyellow; */
-            list-style: none;
-            display: flex;
-            font-size: 25px;
-            justify-content: center;
-            align-items: center;
-            margin-right: 15px;
-            
-           
-        }
-
-        ul li a{
-            display: flex;
-            margin: 1.5rem;
-            text-decoration: none;
-            color: white;
-        }
-
-        nav{
-            /* border:  2px solid blue; */
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            width: 828px;
-            height: 140px;
-            background-color: blue;
-            border-radius: 20px;
-            margin-top: 140px;
-            margin-right: 10px;
-            }
-
-        .nav1 a{
-            
-            justify-content: center;
-            align-items: center;
-            
-            
-        }
-
-        section{
-            /* border: 2px solid red; */
-            width: 828px;
-            height: 100%;
-            margin-left: 10px;
-            margin-right: 10px;
-            border-radius: 15px;
-            margin-top: 10px;
-            background-color: blue;
-        }
-        
-        .section1{
-            margin-left: 10px;
-            margin-right: 10px;
-            margin-top: 10px;
-            color: white;
-
-        }
-
-        .section1 video{
-            margin-top: 20px;
-        }
-
-        footer{
-            font-size: 25px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            display: flex;
-            width: 100%;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background-color: black;
-            color: white;
-        }
-        
-        #btt{
-            padding: 1.5rem;
-            border: none;
-            background-color: black;
-            color: white;
-            font-size: 30px;
-            border-radius: 20px;
-            position: fixed;
-            z-index: 1;
-            right: 1rem;
-            bottom: 3rem;
-            right: 2rem;
-
-        }
-       }
-
-
-       
-       
     </style>
-
-<script>
-    let mybtt = document.getElementById("btt");
-
-    
-    function scrollFuntion() {
-        if (document.body.scrollTopn > 5 || document.documentElement.scrollTop > 5) {
-            mybtt.style.display = "block";
-        } else
-            mybtt.style.display = "none";
-    }
-
-    window.onscroll = function() {
-        scrollFuntion();
-    }
-
-    function back() {
-        document.documentElement.scrollTop = 0;
-        document.body.scrollTop = 0;
-    }
-
-   
-</script>
-
+    <!-- end style -->
 </head>
+
 <body>
 
-
+    <script>
+        let mybtt = document.getElementById("btt");
     
-
-
-   <div class="div-b">
-    <button onclick="back();" id="btt" title="ပွၵ်ႈၶိုၼ်းတင်းၼိူဝ်">🔼</button>
-   </div>
-    <!-- s header -->
+        
+        function scrollFuntion() {
+            if (document.body.scrollTopn > 5 || document.documentElement.scrollTop > 5) {
+                mybtt.style.display = "block";
+            } else
+                mybtt.style.display = "none";
+        }
+    
+        window.onscroll = function() {
+            scrollFuntion();
+        }
+    
+        function back() {
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+        }
+    
+       
+    </script>
+    
+    <div class="div-b">
+        <button onclick="back();" id="btt" title="ပွၵ်ႈၶိုၼ်းတင်းၼိူဝ်">💛</button>
+       </div>
+    
+    <!-- start header -->
     <header>
 
-        <div class="logo">
-            <h1>Tai X</h1>
+        <div class="header1">
+            <h2>Tai X</h2>
         </div>
 
         <ul>
-            <li><a href="https://www.xvideos.com/">Video</a></li>
-            <li><a href="https://multi.xnxx.com/">Photo</a></li>
-            <li><a href="https://www.sex.com/">TikTok</a></li>
+            <li><a href="#">ငဝ်းတူင်ႇ</a></li>
+            <li><a href="#">ၶႅပ်းႁၢင်ႈ</a></li>
+            <li><a href="#">တိၵ်းတွၵ်ႇ</a></li>
         </ul>
 
     </header>
-    <!-- e header -->
+    <!-- end header -->
 
-    <!-- s nav -->
+    <!-- start nav -->
     <nav>
-
-        <div class="nav1" style="width: 828px;">
-            <a href="https://www.xnxx.com/search/stepmother"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: red; color: rgb(0, 0, 0);">[မႄႈသိုပ်ႇ]</button></a>
-            <a href="https://www.xnxx.com/search/stepsister"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: red; color: rgb(0, 0, 0);">[ပီႈသိုပ်ႇ]</button></a>
-            <a href="https://www.xnxx.com/search/girlfriend?top"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: rgb(248, 248, 248); color: rgb(0, 0, 0);">[ၸူႉႁၵ်ႉ]</button></a>
-            <a href="https://www.xnxx.com/search/china+hot"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">[သၢဝ်ၶေႇ]</button></a>
-            <a href="https://www.xnxx.com/search/myanmar?top"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">[သၢဝ်မၢၼ်ႈ]</button></a>
-            <a href="https://www.xnxx.com/search/thai%20sex?top"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: rgb(255, 0, 0); color: rgb(0, 0, 0);">[သၢဝ်ထႆး]</button></a>
-            <a href="https://www.xnxx.com/search/cum+in"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: red; color: rgb(0, 0, 0);">[တႅၵ်ႇၼွၵ်ႈ]</button></a>
-            <a href="https://www.xnxx.com/search/cum+out"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: red; color: rgb(0, 0, 0);">[တႅၵ်ႇၼႂ်း]</button></a>
-            <a href="https://www.xnxx.com/search/girl%20%2B%20girl?top"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: red; color: rgb(0, 0, 0);">[ယိင်း+ယိင်း]</button></a>
-            <a href="https://www.xnxx.com/search/pussy"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">[ ႁီ ]</button></a>
-            <a href="https://www.xnxx.com/search/18yo?top"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">[သၢဝ်18+]</button></a>
-            <a href="https://www.xnxx.com/search/step%20father?top"><button style="font-size: 27px; border-radius: 15px; margin-top: 5px; margin-right: 5px; margin-left: 5px; margin-bottom: 2px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">[ပေႃႈသိုပ်ႇ]</button></a>
-            
-            
+        <div class="nav1">
+           <a href="#"><button style="font-size: 25px; border-radius: 20px; background-color: red; border-style: double;">ပီႈသၢဝ်</button></a>
+           <a href="#"><button style="font-size: 25px; border-radius: 20px; background-color: rgb(255, 255, 255); border-style: double;">မႄႈသိုပ်ႇ</button></a>
+           <a href="#"><button style="font-size: 25px; border-radius: 20px; background-color: rgb(255, 255, 255); border-style: double;">ပေႃႈသိုပ်ႇ</button></a>
+           <a href="#"><button style="font-size: 25px; border-radius: 20px; background-color: rgb(255, 255, 255); border-style: double;">ၸူႉႁၵ်ႉ</button></a>
+           <a href="#"><button style="font-size: 25px; border-radius: 20px; background-color: rgb(255, 255, 255); border-style: double;">သၢဝ်ၶေႇ</button></a>
+           <a href="#"><button style="font-size: 25px; border-radius: 20px; background-color: red; border-style: double;">သၢဝ်မၢၼ်ႈ</button></a>
+           <br>
+           <br>
+           <a href="#"><button style="font-size: 25px; border-radius: 20px; background-color: red; border-style: double;">သၢဝ်ထႆး</button></a>
+           <a href="#"><button style="font-size: 25px; border-radius: 20px; background-color: rgb(255, 255, 255); border-style: double;">တႅၵ်ႇၼွၵ်ႈ</button></a>
+           <a href="#"><button style="font-size: 25px; border-radius: 20px; background-color: rgb(255, 255, 255); border-style: double;">တႅၵ်ႇၼႂ်း</button></a>
+           <a href="#"><button style="font-size: 25px; border-radius: 20px; background-color: rgb(255, 255, 255); border-style: double;">ၷျႃႇပၢၼ်ႇ</button></a>
+           <a href="#"><button style="font-size: 25px; border-radius: 20px; background-color: rgb(255, 255, 255); border-style: double;">ၵဝ်းရီ</button></a>
+           <a href="#"><button style="font-size: 25px; border-radius: 20px; background-color: red; border-style: double;">ၸၼ်ႉၸွမ်</button></a>
+           <br>
+           <br>
+           <a href="#"><button style="font-size: 25px; border-radius: 20px; background-color: red; border-style: double;">မေႃယႃဢွၼ်ႇ</button></a>
+           <a href="#"><button style="font-size: 25px; border-radius: 20px; background-color: rgb(255, 255, 255); border-style: double;">ယိင်းတေႃႇယိင်း</button></a>
+           <a href="#"><button style="font-size: 25px; border-radius: 20px; background-color: rgb(255, 255, 255); border-style: double;">ဢူမ် လေး</button></a>
+           <a href="#"><button style="font-size: 25px; border-radius: 20px; background-color: red; border-style: double;">လဵၼ်ႈၵူၺ်း</button></a>
         </div>
     </nav>
-    <!-- e nav -->
+    <!-- End nav -->
 
-    <!-- s section -->
-    <section>
-        <div class="section1" style="margin-right: 10px;">
+    <!-- start main -->
+    <main>
+        <div class="main1">
+            <iframe src="https://www.xvideos.com/embedframe/78152693" frameborder="0"></iframe>
+            <p style=" margin-top: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 25px; font-size: 30px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, maxime.
+            </p>
             
-            <iframe src="https://www.xvideos.com/embedframe/78152693" style="margin-top: 10px; border-radius: 20px; object-fit: cover;" frameborder=0 width=800 height=450 scrolling=no ></iframe>
-            <p style="font-size: 25px; margin-left: 10px; margin-top: 10px;">သၢဝ်ၶိုၵ်ႉၶႅမ်ႉ ဢႃႇယု18 ၶိုၵ်ႉထူၼ်ႈ</p>
-            <br style="margin-bottom: 10px; margin-top: 15px;">
-             
-            <iframe src="https://www.xvideos.com/embedframe/73813883" style="margin-top: 10px; border-radius: 20px; object-fit: cover;" frameborder=0 width=800 height=450 scrolling=no ></iframe>
-            <p style="font-size: 25px; margin-left: 10px; margin-top: 10px;">Ratione asperiores voluptate adipisci iure, quaerat earum!</p>
-            <br style="margin-bottom: 10px; margin-top: 15px;">
-
-
-
+            <iframe src="https://www.xvideos.com/embedframe/78152693" frameborder="0"></iframe>
+            <p style=" margin-top: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 25px; font-size: 30px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, maxime.
+            </p>
         </div>
 
-        <div class="section2">
-            <iframe src="https://www.xvideos.com/embedframe/59314263" style="margin-top: 10px;margin-left: 10px; border-radius: 20px; object-fit: cover;" frameborder=0 width=800 height=450 scrolling=no ></iframe>
-            <p style="font-size: 25px; margin-left: 10px; margin-top: 10px;">Ratione asperiores voluptate adipisci iure, quaerat earum!</p>
-            <br style="margin-bottom: 10px; margin-top: 15px;">
-             
-            <iframe src="https://www.xvideos.com/embedframe/59055167" style="margin-top: 10px; margin-left: 10px; border-radius: 20px; object-fit: cover;" frameborder=0 width=800 height=450 scrolling=no ></iframe>
-            <p style="font-size: 25px; margin-left: 10px; margin-top: 10px;">Ratione asperiores voluptate adipisci iure, quaerat earum!</p>
-            <br style="margin-bottom: 10px; margin-top: 15px;">
-
-
-        </div>
-       
-        <div class="section3">
-            <iframe src="https://www.xvideos.com/embedframe/55116487" style="margin-top: 10px; margin-left: 10px; border-radius: 20px; object-fit: cover;" frameborder=0 width=800 height=450 scrolling=no ></iframe>
-            <p style="font-size: 25px; margin-left: 10px; margin-top: 10px;">Ratione asperiores voluptate adipisci iure, quaerat earum!</p>
-            <br style="margin-bottom: 10px; margin-top: 15px;">
-
-             
-            <iframe src="https://www.xvideos.com/embedframe/41843749" style="margin-top: 10px; margin-left: 10px; border-radius: 20px; object-fit: cover;" frameborder=0 width=800 height=450 scrolling=no ></iframe>
-            <p style="font-size: 25px; margin-left: 10px; margin-top: 10px;">Ratione asperiores voluptate adipisci iure, quaerat earum!</p>
-            <br style="margin-bottom: 10px; margin-top: 15px;">
-
-        </div>
-
-        <div class="section4">
-                         
-            <iframe src="https://www.xvideos.com/embedframe/51811355" style="margin-top: 10px; margin-left: 10px; border-radius: 20px; object-fit: cover;" frameborder=0 width=800 height=450 scrolling=no ></iframe>
-            <p style="font-size: 25px; margin-left: 10px; margin-top: 10px;">Ratione asperiores voluptate adipisci iure, quaerat earum!</p>
-            <br style="margin-bottom: 10px; margin-top: 15px;">
-             
-            <iframe src="https://www.xvideos.com/embedframe/59643027" style="margin-top: 10px; margin-left: 10px; border-radius: 20px; object-fit: cover;" frameborder=0 width=800 height=450 scrolling=no ></iframe>
-            <p style="font-size: 25px; margin-left: 10px; margin-top: 10px;">Ratione asperiores voluptate adipisci iure, quaerat earum!</p>
-            <br style="margin-bottom: 10px; margin-top: 15px;">
+        <div class="main1">
+            <iframe src="https://www.xvideos.com/embedframe/78152693" frameborder="0"></iframe>
+            <p style=" margin-top: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 25px; font-size: 30px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, maxime.
+            </p>
             
-             
-            
-
+            <iframe src="https://www.xvideos.com/embedframe/78152693" frameborder="0"></iframe>
+            <p style=" margin-top: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 25px; font-size: 30px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, maxime.
+            </p>
         </div>
 
-        <div class="section5">
-            <iframe src="https://www.xvideos.com/embedframe/59643027" style="margin-top: 10px; margin-left: 10px; border-radius: 20px; object-fit: cover;" frameborder=0 width=800 height=450 scrolling=no ></iframe>
-            <p style="font-size: 25px; margin-left: 10px; margin-top: 10px;">Ratione asperiores voluptate adipisci iure, quaerat earum!</p>
-            <br style="margin-bottom: 10px; margin-top: 15px;">
-
-            <iframe src="https://www.xvideos.com/embedframe/55040631" style="margin-top: 10px; margin-left: 10px; border-radius: 20px; object-fit: cover;" frameborder=0 width=800 height=450 scrolling=no ></iframe>
-            <p style="font-size: 25px; margin-left: 10px; margin-top: 10px;">Ratione asperiores voluptate adipisci iure, quaerat earum!</p>
-            <br style="margin-bottom: 10px; margin-top: 15px;">
-
+        <div class="main1">
+            <iframe src="https://www.xvideos.com/embedframe/78152693" frameborder="0"></iframe>
+            <p style=" margin-top: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 25px; font-size: 30px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, maxime.
+            </p>
+            
+            <iframe src="https://www.xvideos.com/embedframe/78152693" frameborder="0"></iframe>
+            <p style=" margin-top: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 25px; font-size: 30px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, maxime.
+            </p>
         </div>
 
-        <div class="section6">
+        <div class="main1">
+            <iframe src="https://www.xvideos.com/embedframe/78152693" frameborder="0"></iframe>
+            <p style=" margin-top: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 25px; font-size: 30px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, maxime.
+            </p>
             
-            <iframe src="https://www.xvideos.com/embedframe/54473299" style="margin-top: 10px; margin-left: 10px; border-radius: 20px; object-fit: cover;" frameborder=0 width=800 height=450 scrolling=no ></iframe>
-            <p style="font-size: 25px; margin-left: 10px; margin-top: 10px;">Ratione asperiores voluptate adipisci iure, quaerat earum!</p>
-            <br style="margin-bottom: 10px; margin-top: 15px;">
-
+            <iframe src="https://www.xvideos.com/embedframe/78152693" frameborder="0"></iframe>
+            <p style=" margin-top: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 25px; font-size: 30px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, maxime.
+            </p>
+        </div>
+        
+        <div class="main1">
+            <iframe src="https://www.xvideos.com/embedframe/78152693" frameborder="0"></iframe>
+            <p style=" margin-top: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 25px; font-size: 30px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, maxime.
+            </p>
             
-            <iframe src="https://www.xvideos.com/embedframe/57865463" style="margin-top: 10px; margin-left: 10px; border-radius: 20px; object-fit: cover;" frameborder=0 width=800 height=450 scrolling=no ></iframe>
-            <p style="font-size: 25px; margin-left: 10px; margin-top: 10px;">Ratione asperiores voluptate adipisci iure, quaerat earum!</p>
-            <br style="margin-bottom: 10px; margin-top: 15px; justify-content: end;align-items: end;">
-
+            <iframe src="https://www.xvideos.com/embedframe/78152693" frameborder="0"></iframe>
+            <p style=" margin-top: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 25px; font-size: 30px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, maxime.
+            </p>
         </div>
 
-       
-    </section>
-    <!-- e section -->
+        <div class="main1">
+            <iframe src="https://www.xvideos.com/embedframe/78152693" frameborder="0"></iframe>
+            <p style=" margin-top: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 25px; font-size: 30px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, maxime.
+            </p>
+            
+            <iframe src="https://www.xvideos.com/embedframe/78152693" frameborder="0"></iframe>
+            <p style=" margin-top: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 25px; font-size: 30px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, maxime.
+            </p>
+        </div>
 
-    
-    <!-- s footer -->
+    </main>
+    <!-- end main -->
+
+    <!-- start footer -->
     <footer>
-        <H3>Copyright:2023</H3>
+        <div class="footer1">
+            <h3>@copyright:2023</h3>
+        </div>
     </footer>
-    <!-- e footer -->
+    <!-- End footer -->
+    
 </body>
 </html>
