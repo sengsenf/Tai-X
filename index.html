@@ -41,7 +41,7 @@
         }
 
         .nav1 {
-            border: 3px solid blue;
+            /* border: 3px solid blue; */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -54,7 +54,7 @@
         }
 
         nav ul {
-            border: 3px solid blue;
+            /* border: 3px solid blue; */
             list-style: none;
             display: flex;
             justify-content: center;
@@ -128,6 +128,132 @@
             margin-left: 15px;
             color: #000000;
             
+        }
+
+
+        @media screen and (max-widrh) {
+            *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        body{
+            background-color: #e31833;
+        }
+
+        header h1{
+            border: 2px solid;
+            width: 828px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e31833;
+            border-radius: 0 25px;
+        }
+
+        nav{
+            border: 2px solid black;
+            display: flex;
+            width: 828px;
+            height: 100px;
+            justify-content: space-between;
+            background-color: #fe6601;
+            border-radius: 0 25px;
+            box-shadow: 0 5px 20px;
+        }
+
+        .nav1 {
+            /* border: 3px solid blue; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 30px;
+            width: 828px;
+            border-radius: 50px;
+            z-index: 1;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            /* border: 3px solid blue; */
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            margin-right: 20px;
+
+        }
+
+        nav ul li {
+            margin: 3.0rem;
+            font-size: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+        }
+
+        .slide_img {
+            margin-top: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+            width:98%;
+            height: 150px;
+            display: flex;
+            animation: bg-slide 10s linear infinite;
+            background-repeat: repeat;
+            background-size: 50%;
+            object-fit: cover;
+            border-radius: 0 20px 30px;
+            box-shadow: 0 8px 10px blue;
+        }
+
+        @keyframes bg-slide{
+            0%{
+                background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/b8/cb/0e/b8cb0e1324b824365186ec78ebfee99e/b8cb0e1324b824365186ec78ebfee99e.17.jpg);
+            }
+
+            30%{
+                background-image: url(https://img-egc.xnxx-cdn.com/videos/thumbs169xnxxposter/dd/e1/d0/dde1d05de989aae0d119a2c43b9b258b/dde1d05de989aae0d119a2c43b9b258b.15.jpg);
+            }
+
+            60%{
+                background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/64/68/50/646850feb3170b270d5219bc5402a0b9-1/646850feb3170b270d5219bc5402a0b9.29.jpg);
+            }
+
+            90%{
+                background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/84/be/08/84be0818a7726906effd8f3f14027b2d/84be0818a7726906effd8f3f14027b2d.24.jpg);
+            }
+
+            100%{
+                background-image: url(https://img-l3.xnxx-cdn.com/videos/thumbs169xnxxll/17/9e/22/179e22b9e2026a76c51e5955a0c35190/179e22b9e2026a76c51e5955a0c35190.12.jpg);
+            }
+        }
+
+        main{
+            width: 828px;
+            height: 100%;
+            margin-top: 10px;
+           box-shadow: 0 4px 8px;
+        }
+
+        .main1{
+            box-shadow: 0 4px 9px;
+            
+        }
+
+        .main1 h1{
+            margin-left: 15px;
+            color: #000000;
+            
+        }
+
         }
         
     </style>
@@ -223,3 +349,4 @@
     </main>
 </body>
 </html>
+
