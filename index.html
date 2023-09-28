@@ -3,225 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S-News</title>
-    
+    <title>Tai-X</title>
 
     <style>
-
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            
         }
+
         body{
-            width: 100%;
-            height: 100%;
-            background-color: #ffffff;
+            background-color: rgb(0, 0, 0);
         }
 
-        header h1{
-            /* border: 2px solid; */
-            width: 100%;
-            height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #e31833;
-            border-radius: 0 25px;
-        }
-
-        nav{
-            /* border: 2px solid black; */
-            display: flex;
+        header{
+            /* border: 2px solid blue; */
             width: 100%;
             height: 70px;
-            justify-content: space-between;
-            background-color: #fe6601;
-            border-radius: 0 25px;
-            box-shadow: 0 5px 20px;
-            position: sticky;
-            top: 0;
-        }
-
-        .nav1 {
-            /* border: 3px solid blue; */
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-left: 5px;
-            width: 98%;
-            border-radius: 50px;
-            z-index: 1;
-           
-        }
-
-        nav ul {
-            /* border: 3px solid blue; */
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            margin-right: -35px;
-
-        }
-
-        nav ul li {
-            margin: 1.0rem;
-            font-size: 25px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: black;
-            font-size: 25x;
-        }
-
-        .slide_img {
-            margin-top: 5px;
-            margin-left: 10px;
-            margin-right: 10px;
-            width: 100%;
-            height: 150px;
-            display: flex;
-            animation: bg-slide 10s linear infinite;
-            background-repeat: repeat;
-            background-size: 50%;
-            object-fit: cover;
-            border-radius: 0 20px 30px;
-            box-shadow: 0 8px 10px blue;
-        }
-
-        @keyframes bg-slide{
-            0%{
-                background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/b8/cb/0e/b8cb0e1324b824365186ec78ebfee99e/b8cb0e1324b824365186ec78ebfee99e.17.jpg);
-            }
-
-            30%{
-                background-image: url(https://img-egc.xnxx-cdn.com/videos/thumbs169xnxxposter/dd/e1/d0/dde1d05de989aae0d119a2c43b9b258b/dde1d05de989aae0d119a2c43b9b258b.15.jpg);
-            }
-
-            60%{
-                background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/64/68/50/646850feb3170b270d5219bc5402a0b9-1/646850feb3170b270d5219bc5402a0b9.29.jpg);
-            }
-
-            90%{
-                background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/84/be/08/84be0818a7726906effd8f3f14027b2d/84be0818a7726906effd8f3f14027b2d.24.jpg);
-            }
-
-            100%{
-                background-image: url(https://img-l3.xnxx-cdn.com/videos/thumbs169xnxxll/17/9e/22/179e22b9e2026a76c51e5955a0c35190/179e22b9e2026a76c51e5955a0c35190.12.jpg);
-            }
-        }
-
-        main{
-            width: 100%;
-            height: 100%;
-            margin-top: 10px;
-           box-shadow: 0 4px 8px;
-        }
-
-        .main1{
-            box-shadow: 0 4px 9px;
-            
-        }
-
-        .main1 h1{
-            margin-left: 15px;
-            color: #000000;
-            
-        }
-
-    @media screen and (max-width: 828px) {
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            
-        }
-        body{
-            width: 100%;
-            height: 100%;
-            background-color: #ff0000;
-        }
-
-        header h1{
-            /* border: 2px solid; */
-            width: 100%;
-            height: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #e31833;
-            border-radius: 0 25px;
+            font-size: 30px;
+            background-color: red;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
         }
 
         nav{
-            /* border: 2px solid black; */
-            display: flex;
+            border: 2px solid;
             width: 100%;
-            height: 50px;
+            height: 100px;
+            display: flex;
             justify-content: space-between;
-            background-color: #fe6601;
-            border-radius: 0 25px;
-            box-shadow: 0 5px 20px;
-            position: sticky;
-            top: 0;
+            padding: 20px;
+            background-color: blue;
         }
 
-        .nav1 {
-            /* border: 3px solid blue; */
+        nav img{
+            border: 2px solid red;
+            width: 70px;  
+            margin-left: 30px;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-left: 5px;
-            width: 100%;
             border-radius: 50px;
-            z-index: 1;
-            
         }
 
-        nav ul {
-            /* border: 3px solid blue; */
-            list-style: none;
+        nav ul{
+            border: 2px solid red;
             display: flex;
-            justify-content: center;
+            width: 40%;
+            margin-right: 20px;
+            justify-content: space-between;
             align-items: center;
-            width: 100%;
-            margin-right: -35px;
+        }
+
+        nav ul li{
+            list-style: none;
 
         }
 
-        nav ul li {
-            margin: 1.0rem;
-            font-size: 25px;
-        }
-
-        nav ul li a {
+        nav ul li a{
+            color: #fff;
             text-decoration: none;
-            color: black;
-            font-size: 25x;
+            font-size: 30px;
         }
 
-        .slide_img {
+        .slide{
             margin-top: 5px;
             margin-left: 10px;
             margin-right: 10px;
-            width: 99%;
-            height: 100px;
+            height: 150px;
             display: flex;
-            animation: bg-slide 10s linear infinite;
+            animation: bg-slide 20s linear infinite;
             background-repeat: repeat;
             background-size: 50%;
             object-fit: cover;
             border-radius: 0 20px 30px;
             box-shadow: 0 8px 10px blue;
-        }
-
-        .main1 iframe{
-            height: 300px;
-            width: 100%;
         }
 
         @keyframes bg-slide{
@@ -246,59 +105,335 @@
             }
         }
 
-        main{
+        section{
             width: 100%;
             height: 100%;
             margin-top: 10px;
-           box-shadow: 0 4px 8px;
         }
 
-        .main1{
-            box-shadow: 0 4px 9px;
-            
+        .section1 {
+           box-shadow: 0 4px 14px black;
+           margin-top: 20px;
         }
 
-        .main1 h1{
-            margin-left: 15px;
-            color: #000000;
-            
+        .section1 h2{
+            margin-left: 40px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
         }
-    }
-       
+
+
+        @media screen and (max-width: 767px) {
+            *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(255, 0, 0);
+        }
+
+        header{
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            background-color: red;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+
+        nav{
+            border: 2px solid;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: blue;
+        }
+
+        nav img{
+            border: 2px solid red;
+            width: 70px;  
+            margin-left: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+        }
+
+        nav ul{
+            border: 2px solid red;
+            display: flex;
+            width: 40%;
+            margin-right: 20px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul li{
+            list-style: none;
+
+        }
+
+        nav ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        .slide{
+            margin-top: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 150px;
+            display: flex;
+            animation: bg-slide 20s linear infinite;
+            background-repeat: repeat;
+            background-size: 50%;
+            object-fit: cover;
+            border-radius: 0 20px 30px;
+            box-shadow: 0 8px 10px blue;
+        }
+
+        @keyframes bg-slide{
+            0%{
+                background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/b8/cb/0e/b8cb0e1324b824365186ec78ebfee99e/b8cb0e1324b824365186ec78ebfee99e.17.jpg);
+            }
+
+            30%{
+                background-image: url(https://img-egc.xnxx-cdn.com/videos/thumbs169xnxxposter/dd/e1/d0/dde1d05de989aae0d119a2c43b9b258b/dde1d05de989aae0d119a2c43b9b258b.15.jpg);
+            }
+
+            60%{
+                background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/64/68/50/646850feb3170b270d5219bc5402a0b9-1/646850feb3170b270d5219bc5402a0b9.29.jpg);
+            }
+
+            90%{
+                background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/84/be/08/84be0818a7726906effd8f3f14027b2d/84be0818a7726906effd8f3f14027b2d.24.jpg);
+            }
+
+            100%{
+                background-image: url(https://img-l3.xnxx-cdn.com/videos/thumbs169xnxxll/17/9e/22/179e22b9e2026a76c51e5955a0c35190/179e22b9e2026a76c51e5955a0c35190.12.jpg);
+            }
+        }
+
+        section{
+            width: 100%;
+            height: 100%;
+            margin-top: 10px;
+            align-items: center;
+        }
+
+        .section1 {
+           box-shadow: 0 4px 14px black;
+           margin-top: 20px;
+        }
+
+        .section1 h2{
+            margin-left: 40px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+
         
+
+        @media screen and (min-width: 768px) {
+            *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+
+        header{
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            background-color: red;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+
+        nav{
+            border: 2px solid;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: blue;
+        }
+
+        nav img{
+            border: 2px solid red;
+            width: 70px;  
+            margin-left: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+        }
+
+        nav ul{
+            border: 2px solid red;
+            display: flex;
+            width: 40%;
+            margin-right: 20px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul li{
+            list-style: none;
+
+        }
+
+        nav ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        .slide{
+            margin-top: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 150px;
+            display: flex;
+            animation: bg-slide 20s linear infinite;
+            background-repeat: repeat;
+            background-size: 50%;
+            object-fit: cover;
+            border-radius: 0 20px 30px;
+            box-shadow: 0 8px 10px blue;
+        }
+
+        @keyframes bg-slide{
+            0%{
+                background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/b8/cb/0e/b8cb0e1324b824365186ec78ebfee99e/b8cb0e1324b824365186ec78ebfee99e.17.jpg);
+            }
+
+            30%{
+                background-image: url(https://img-egc.xnxx-cdn.com/videos/thumbs169xnxxposter/dd/e1/d0/dde1d05de989aae0d119a2c43b9b258b/dde1d05de989aae0d119a2c43b9b258b.15.jpg);
+            }
+
+            60%{
+                background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/64/68/50/646850feb3170b270d5219bc5402a0b9-1/646850feb3170b270d5219bc5402a0b9.29.jpg);
+            }
+
+            90%{
+                background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/84/be/08/84be0818a7726906effd8f3f14027b2d/84be0818a7726906effd8f3f14027b2d.24.jpg);
+            }
+
+            100%{
+                background-image: url(https://img-l3.xnxx-cdn.com/videos/thumbs169xnxxll/17/9e/22/179e22b9e2026a76c51e5955a0c35190/179e22b9e2026a76c51e5955a0c35190.12.jpg);
+            }
+        }
+
+        section{
+            width: 100%;
+            height: 100%;
+            margin-top: 10px;
+            
+        }
+
+        section{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 15px;
+        }
+
+        .section1 {
+
+            width: 500px;
+            height: 300px;
+            box-shadow: 0 4px 14px black;
+            margin-top: 20px;
+        }
+
+        .section1 h2{
+            margin-left: 40px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+        }
+        }
+
+
     </style>
+
 </head>
 <body>
-    <!-- header start -->
-    <header>
-        <H1>S-NEWS</H1>
-    </header>
-    <!-- header end -->
 
-    <!-- Nav start -->
+    <header>
+        <h2>Tai Xvideo</h2>
+    </header>
+
     <nav>
-        <div class="nav1">
-            <img  src="#">
-        </div>
+        <img src="#">
+
 
         <ul>
-            <li><a href="#">HOt</a></li>
-            <li><a href="#">HOt</a></li>
-            <li><a href="#">HOt</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Photo</a></li>
+            <li><a href="#">TikTok</a></li>
         </ul>
     </nav>
 
-    <div class="slide_img"></div>
+    <div class="slide"></div>
 
-    <main>
-        <div class="main1" style="object-fit: cover; margin-top: 5px;">
-            <iframe src="https://www.xvideos.com/embedframe/77740399" 
-            frameborder=5 width=100% height=200 scrolling=no allowfullscreen controls autoplay></iframe>
-            <h3>hello world this is a xvideo can you see it မႂ်ႊသုင်ၶႃႈ</h3>
+    <section>
+        <div class="section1">
+            <iframe src="https://www.xvideos.com/embedframe/57865463" frameborder=0 width=100% height=350 scrolling=no allowfullscreen=allowfullscreen></iframe>
+            <h2>မႂ်ႇသုင်ၵူႈၵေႃႉၶႃႈ ၼႆႉၵေႃးတေပဵၼ်ဝဵပ်ႉသၢႆႉၵဝ်ၶႃႈ</h2>
         </div>
 
-       
-    </main>
+        <div class="section1">
+            <iframe src="https://www.xvideos.com/embedframe/57865463" frameborder=0 width=100% height=350 scrolling=no allowfullscreen=allowfullscreen></iframe>
+            <h2>မႂ်ႇသုင်ၵူႈၵေႃႉၶႃႈ ၼႆႉၵေႃးတေပဵၼ်ဝဵပ်ႉသၢႆႉၵဝ်ၶႃႈ</h2>
+        </div>
+
+        <div class="section1">
+            <iframe src="https://www.xvideos.com/embedframe/57865463" frameborder=0 width=100% height=350 scrolling=no allowfullscreen=allowfullscreen></iframe>
+            <h2>မႂ်ႇသုင်ၵူႈၵေႃႉၶႃႈ ၼႆႉၵေႃးတေပဵၼ်ဝဵပ်ႉသၢႆႉၵဝ်ၶႃႈ</h2>
+        </div>
+
+        <div class="section1">
+            <iframe src="https://www.xvideos.com/embedframe/57865463" frameborder=0 width=100% height=350 scrolling=no allowfullscreen=allowfullscreen></iframe>
+            <h2>မႂ်ႇသုင်ၵူႈၵေႃႉၶႃႈ ၼႆႉၵေႃးတေပဵၼ်ဝဵပ်ႉသၢႆႉၵဝ်ၶႃႈ</h2>
+        </div>
+
+        <div class="section1">
+            <iframe src="https://www.xvideos.com/embedframe/57865463" frameborder=0 width=100% height=350 scrolling=no allowfullscreen=allowfullscreen></iframe>
+            <h2>မႂ်ႇသုင်ၵူႈၵေႃႉၶႃႈ ၼႆႉၵေႃးတေပဵၼ်ဝဵပ်ႉသၢႆႉၵဝ်ၶႃႈ</h2>
+        </div>
+
+        <div class="section1">
+            <iframe src="https://www.xvideos.com/embedframe/57865463" frameborder=0 width=100% height=350 scrolling=no allowfullscreen=allowfullscreen></iframe>
+            <h2>မႂ်ႇသုင်ၵူႈၵေႃႉၶႃႈ ၼႆႉၵေႃးတေပဵၼ်ဝဵပ်ႉသၢႆႉၵဝ်ၶႃႈ</h2>
+        </div>
+
+        <div class="section1">
+            <iframe src="https://www.xvideos.com/embedframe/57865463" frameborder=0 width=100% height=350 scrolling=no allowfullscreen=allowfullscreen></iframe>
+            <h2>မႂ်ႇသုင်ၵူႈၵေႃႉၶႃႈ ၼႆႉၵေႃးတေပဵၼ်ဝဵပ်ႉသၢႆႉၵဝ်ၶႃႈ</h2>
+        </div>
+    </section>
+    
 </body>
 </html>
-
