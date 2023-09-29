@@ -6,6 +6,7 @@
     <title>Tai-X</title>
 
     <style>
+
         *{
             margin: 0;
             padding: 0;
@@ -13,74 +14,79 @@
         }
 
         body{
-            background-color: rgb(0, 0, 0);
-        }
-
-        header{
-            /* border: 2px solid blue; */
-            width: 100%;
-            height: 70px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 30px;
-            background-color: red;
-            border-top-right-radius: 20px;
-            border-top-left-radius: 20px;
-        }
-
-        nav{
-            border: 2px solid;
-            width: 100%;
-            height: 100px;
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
             background-color: blue;
         }
 
-        nav img{
-            border: 2px solid red;
-            width: 70px;  
-            margin-left: 30px;
+        header{
+            border: 2px solid;
+            width: 597px;
+            height: 70px;
+            background-color: rgb(55, 0, 255);
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 50px;
+            border-radius: 20px;
+            color: white;
         }
 
-        nav ul{
-            border: 2px solid red;
+        nav{
+            border: 2px solid black;
+            width: 597px;
+            height: 90px;
             display: flex;
-            width: 40%;
-            margin-right: 20px;
             justify-content: space-between;
             align-items: center;
+            background-color: red;
         }
 
-        nav ul li{
-            list-style: none;
+    nav h2{
+        border: 2px solid darkblue;
+        margin-left: 30px;
+        font-size: 40px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+    }
 
-        }
+    nav ul{
+        border: 2px solid darkblue;
+        display: flex;
+        font-size: 20px;
+        margin-right: 20px;
+        width: 40%;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
 
-        nav ul li a{
-            color: #fff;
-            text-decoration: none;
-            font-size: 30px;
-        }
+    }
+
+    nav ul li{
+        display: flex;
+        margin: 1rem;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: black;
+    }
+       
 
         .slide{
             margin-top: 5px;
             margin-left: 10px;
             margin-right: 10px;
             height: 150px;
+            width: 580px;
             display: flex;
             animation: bg-slide 20s linear infinite;
             background-repeat: repeat;
             background-size: 50%;
             object-fit: cover;
             border-radius: 0 20px 30px;
-            box-shadow: 0 8px 10px blue;
+            box-shadow: 0 8px 10px rgb(255, 0, 0);
         }
 
         @keyframes bg-slide{
@@ -103,279 +109,49 @@
             100%{
                 background-image: url(https://img-l3.xnxx-cdn.com/videos/thumbs169xnxxll/17/9e/22/179e22b9e2026a76c51e5955a0c35190/179e22b9e2026a76c51e5955a0c35190.12.jpg);
             }
+      
         }
 
-        section{
-            width: 100%;
+        main{
+            border: 2px solid red;
+            background-color: rgb(38, 0, 255);
+            width: 597px;
             height: 100%;
             margin-top: 10px;
         }
 
-        .section1 {
-           box-shadow: 0 4px 14px black;
-           margin-top: 20px;
-        }
-
-        .section1 h2{
-            margin-left: 40px;
+        .main1{
             margin-top: 10px;
+            box-shadow: 0 2px 4px;
             margin-bottom: 10px;
-
         }
 
-
-        @media screen and (max-width: 767px) {
-            *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        .main1 p{
+            border: 2px solid rgb(255, 0, 0);
+            margin-left: 15px;
+            margin-right: 15px;
+            display: flex;
+            
+            align-items: center;
+            height: 50px;
+            font-size: 23px;
+            color: white;
         }
 
-        body{
+        footer{
+            border: 2px solid darkcyan;
+            width: 597px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background-color: rgb(255, 0, 0);
         }
 
-        header{
-            /* border: 2px solid blue; */
-            width: 100%;
-            height: 70px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 30px;
-            background-color: red;
-            border-top-right-radius: 20px;
-            border-top-left-radius: 20px;
+        footer h4{
+            margin-right: 2rem;
+            color:white
         }
-
-        nav{
-            border: 2px solid;
-            width: 100%;
-            height: 100px;
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-            background-color: blue;
-        }
-
-        nav img{
-            border: 2px solid red;
-            width: 70px;  
-            margin-left: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50px;
-        }
-
-        nav ul{
-            border: 2px solid red;
-            display: flex;
-            width: 40%;
-            margin-right: 20px;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav ul li{
-            list-style: none;
-
-        }
-
-        nav ul li a{
-            color: #fff;
-            text-decoration: none;
-            font-size: 30px;
-        }
-
-        .slide{
-            margin-top: 5px;
-            margin-left: 10px;
-            margin-right: 10px;
-            height: 150px;
-            display: flex;
-            animation: bg-slide 20s linear infinite;
-            background-repeat: repeat;
-            background-size: 50%;
-            object-fit: cover;
-            border-radius: 0 20px 30px;
-            box-shadow: 0 8px 10px blue;
-        }
-
-        @keyframes bg-slide{
-            0%{
-                background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/b8/cb/0e/b8cb0e1324b824365186ec78ebfee99e/b8cb0e1324b824365186ec78ebfee99e.17.jpg);
-            }
-
-            30%{
-                background-image: url(https://img-egc.xnxx-cdn.com/videos/thumbs169xnxxposter/dd/e1/d0/dde1d05de989aae0d119a2c43b9b258b/dde1d05de989aae0d119a2c43b9b258b.15.jpg);
-            }
-
-            60%{
-                background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/64/68/50/646850feb3170b270d5219bc5402a0b9-1/646850feb3170b270d5219bc5402a0b9.29.jpg);
-            }
-
-            90%{
-                background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/84/be/08/84be0818a7726906effd8f3f14027b2d/84be0818a7726906effd8f3f14027b2d.24.jpg);
-            }
-
-            100%{
-                background-image: url(https://img-l3.xnxx-cdn.com/videos/thumbs169xnxxll/17/9e/22/179e22b9e2026a76c51e5955a0c35190/179e22b9e2026a76c51e5955a0c35190.12.jpg);
-            }
-        }
-
-        section{
-            width: 100%;
-            height: 100%;
-            margin-top: 10px;
-            align-items: center;
-        }
-
-        .section1 {
-           box-shadow: 0 4px 14px black;
-           margin-top: 20px;
-        }
-
-        .section1 h2{
-            margin-left: 40px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-
-        }
-
-        
-
-        @media screen and (min-width: 768px) {
-            *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body{
-            background-color: rgb(0, 0, 0);
-        }
-
-        header{
-            /* border: 2px solid blue; */
-            width: 100%;
-            height: 70px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 30px;
-            background-color: red;
-            border-top-right-radius: 20px;
-            border-top-left-radius: 20px;
-        }
-
-        nav{
-            border: 2px solid;
-            width: 100%;
-            height: 100px;
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-            background-color: blue;
-        }
-
-        nav img{
-            border: 2px solid red;
-            width: 70px;  
-            margin-left: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50px;
-        }
-
-        nav ul{
-            border: 2px solid red;
-            display: flex;
-            width: 40%;
-            margin-right: 20px;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav ul li{
-            list-style: none;
-
-        }
-
-        nav ul li a{
-            color: #fff;
-            text-decoration: none;
-            font-size: 30px;
-        }
-
-        .slide{
-            margin-top: 5px;
-            margin-left: 10px;
-            margin-right: 10px;
-            height: 150px;
-            display: flex;
-            animation: bg-slide 20s linear infinite;
-            background-repeat: repeat;
-            background-size: 50%;
-            object-fit: cover;
-            border-radius: 0 20px 30px;
-            box-shadow: 0 8px 10px blue;
-        }
-
-        @keyframes bg-slide{
-            0%{
-                background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/b8/cb/0e/b8cb0e1324b824365186ec78ebfee99e/b8cb0e1324b824365186ec78ebfee99e.17.jpg);
-            }
-
-            30%{
-                background-image: url(https://img-egc.xnxx-cdn.com/videos/thumbs169xnxxposter/dd/e1/d0/dde1d05de989aae0d119a2c43b9b258b/dde1d05de989aae0d119a2c43b9b258b.15.jpg);
-            }
-
-            60%{
-                background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/64/68/50/646850feb3170b270d5219bc5402a0b9-1/646850feb3170b270d5219bc5402a0b9.29.jpg);
-            }
-
-            90%{
-                background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/84/be/08/84be0818a7726906effd8f3f14027b2d/84be0818a7726906effd8f3f14027b2d.24.jpg);
-            }
-
-            100%{
-                background-image: url(https://img-l3.xnxx-cdn.com/videos/thumbs169xnxxll/17/9e/22/179e22b9e2026a76c51e5955a0c35190/179e22b9e2026a76c51e5955a0c35190.12.jpg);
-            }
-        }
-
-        section{
-            width: 100%;
-            height: 100%;
-            margin-top: 10px;
-            
-        }
-
-        section{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 15px;
-        }
-
-        .section1 {
-
-            width: 500px;
-            height: 300px;
-            box-shadow: 0 4px 14px black;
-            margin-top: 20px;
-        }
-
-        .section1 h2{
-            margin-left: 40px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-
-        }
-        }
-        }
-
-
     </style>
 
 </head>
@@ -386,7 +162,7 @@
     </header>
 
     <nav>
-        <img src="#">
+        <h2>X</h2>
 
 
         <ul>
@@ -398,42 +174,54 @@
 
     <div class="slide"></div>
 
-    <section>
-        <div class="section1">
-            <iframe src="https://www.xvideos.com/embedframe/57865463" frameborder=0 width=100% height=350 scrolling=no allowfullscreen=allowfullscreen></iframe>
-            <h2>မႂ်ႇသုင်ၵူႈၵေႃႉၶႃႈ ၼႆႉၵေႃးတေပဵၼ်ဝဵပ်ႉသၢႆႉၵဝ်ၶႃႈ</h2>
-        </div>
+<main>
+    <div class="main1">
+        <iframe src="https://www.xvideos.com/embedframe/57865463" 
+        frameborder=0 width=590 height=300 scrolling=no 
+        allowfullscreen=allowfullscreen controls autoplay></iframe>
+        <p>ၶၢဝ်ႇၶၢဝ်ႇၶၢဝ်ႇၶၢဝ်ႇၶၢဝ်ႇၶၢဝိႇမႂ်ႇသုင်တင်းသႅင်ႈၶႃႈမိူဝ်ႈၼႆႉ</p>
+    </div>
 
-        <div class="section1">
-            <iframe src="https://www.xvideos.com/embedframe/57865463" frameborder=0 width=100% height=350 scrolling=no allowfullscreen=allowfullscreen></iframe>
-            <h2>မႂ်ႇသုင်ၵူႈၵေႃႉၶႃႈ ၼႆႉၵေႃးတေပဵၼ်ဝဵပ်ႉသၢႆႉၵဝ်ၶႃႈ</h2>
-        </div>
+    <div class="main1">
+        <iframe src="https://www.xvideos.com/embedframe/57865463" 
+        frameborder=0 width=590 height=300 scrolling=no 
+        allowfullscreen=allowfullscreen controls autoplay></iframe>
+        <p>ၶၢဝ်ႇၶၢဝ်ႇၶၢဝ်ႇၶၢဝ်ႇၶၢဝ်ႇၶၢဝိႇမႂ်ႇသုင်တင်းသႅင်ႈၶႃႈမိူဝ်ႈၼႆႉ</p>
+    </div>
 
-        <div class="section1">
-            <iframe src="https://www.xvideos.com/embedframe/57865463" frameborder=0 width=100% height=350 scrolling=no allowfullscreen=allowfullscreen></iframe>
-            <h2>မႂ်ႇသုင်ၵူႈၵေႃႉၶႃႈ ၼႆႉၵေႃးတေပဵၼ်ဝဵပ်ႉသၢႆႉၵဝ်ၶႃႈ</h2>
-        </div>
+    <div class="main1">
+        <iframe src="https://www.xvideos.com/embedframe/57865463" 
+        frameborder=0 width=590 height=300 scrolling=no 
+        allowfullscreen=allowfullscreen controls autoplay></iframe>
+        <p>ၶၢဝ်ႇၶၢဝ်ႇၶၢဝ်ႇၶၢဝ်ႇၶၢဝ်ႇၶၢဝိႇမႂ်ႇသုင်တင်းသႅင်ႈၶႃႈမိူဝ်ႈၼႆႉ</p>
+    </div>
 
-        <div class="section1">
-            <iframe src="https://www.xvideos.com/embedframe/57865463" frameborder=0 width=100% height=350 scrolling=no allowfullscreen=allowfullscreen></iframe>
-            <h2>မႂ်ႇသုင်ၵူႈၵေႃႉၶႃႈ ၼႆႉၵေႃးတေပဵၼ်ဝဵပ်ႉသၢႆႉၵဝ်ၶႃႈ</h2>
-        </div>
+    <div class="main1">
+        <iframe src="https://www.xvideos.com/embedframe/57865463" 
+        frameborder=0 width=590 height=300 scrolling=no 
+        allowfullscreen=allowfullscreen controls autoplay></iframe>
+        <p>ၶၢဝ်ႇၶၢဝ်ႇၶၢဝ်ႇၶၢဝ်ႇၶၢဝ်ႇၶၢဝိႇမႂ်ႇသုင်တင်းသႅင်ႈၶႃႈမိူဝ်ႈၼႆႉ</p>
+    </div>
 
-        <div class="section1">
-            <iframe src="https://www.xvideos.com/embedframe/57865463" frameborder=0 width=100% height=350 scrolling=no allowfullscreen=allowfullscreen></iframe>
-            <h2>မႂ်ႇသုင်ၵူႈၵေႃႉၶႃႈ ၼႆႉၵေႃးတေပဵၼ်ဝဵပ်ႉသၢႆႉၵဝ်ၶႃႈ</h2>
-        </div>
+    <div class="main1">
+        <iframe src="https://www.xvideos.com/embedframe/57865463" 
+        frameborder=0 width=590 height=300 scrolling=no 
+        allowfullscreen=allowfullscreen controls autoplay></iframe>
+        <p>ၶၢဝ်ႇၶၢဝ်ႇၶၢဝ်ႇၶၢဝ်ႇၶၢဝ်ႇၶၢဝိႇမႂ်ႇသုင်တင်းသႅင်ႈၶႃႈမိူဝ်ႈၼႆႉ</p>
+    </div>
 
-        <div class="section1">
-            <iframe src="https://www.xvideos.com/embedframe/57865463" frameborder=0 width=100% height=350 scrolling=no allowfullscreen=allowfullscreen></iframe>
-            <h2>မႂ်ႇသုင်ၵူႈၵေႃႉၶႃႈ ၼႆႉၵေႃးတေပဵၼ်ဝဵပ်ႉသၢႆႉၵဝ်ၶႃႈ</h2>
-        </div>
+    <div class="main1">
+        <iframe src="https://www.xvideos.com/embedframe/57865463" 
+        frameborder=0 width=590 height=300 scrolling=no 
+        allowfullscreen=allowfullscreen controls autoplay></iframe>
+        <p>ၶၢဝ်ႇၶၢဝ်ႇၶၢဝ်ႇၶၢဝ်ႇၶၢဝ်ႇၶၢဝိႇမႂ်ႇသုင်တင်းသႅင်ႈၶႃႈမိူဝ်ႈၼႆႉ</p>
+    </div>
+</main>
 
-        <div class="section1">
-            <iframe src="https://www.xvideos.com/embedframe/57865463" frameborder=0 width=100% height=350 scrolling=no allowfullscreen=allowfullscreen></iframe>
-            <h2>မႂ်ႇသုင်ၵူႈၵေႃႉၶႃႈ ၼႆႉၵေႃးတေပဵၼ်ဝဵပ်ႉသၢႆႉၵဝ်ၶႃႈ</h2>
-        </div>
-    </section>
+<footer>
+    <h4>&copy;2023</h4>
+    <h4>Deverlop by SengZarm</h4>
+</footer>
     
 </body>
 </html>
